@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Front-End
+A web app that fetches random photos from xkcd api and keeps tab of 
+the photos viewed by storing them on local storage.  Considering it was a small web-app, most of my functions are in App.js. However, given more complexity, I would definitely split the web-app into more components.
+# Technologies Used
+React and Node JS.
+# Screenshots
+This is the homepage of the web-app.It fetches a random image using xkcd api, and displays it. It also fetches the image that is right before it and right after it and 
+stores their details, this is to enable the user to move on to the next/previous image quickly without having to wait for the api call. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/67632151/163388770-d36ded79-4bd2-45cb-9a7b-a42b077166e6.png)
 
-## Available Scripts
+Items are interactive and have effects when hovered on. If the image takes some time to load, the user would be presented with a loading animation while the next image loads.
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/67632151/163389220-d16db630-127a-45db-9b2a-33b741ce1cb6.png)
+![image](https://user-images.githubusercontent.com/67632151/163389369-6f78cd98-4f86-4667-8b05-7a9685f1c357.png)
 
-### `npm start`
+Whenever the user views a meme, the table updates with the title of the meme and the time he/she saw it at. It implements a scroll bar as it can become large in size. The table entries are stored in a map where the key is the title
+to enable a quick check if the user has seen this meme or not (O(1)). 
+The table also contains a button next to each entry that stores its image's url, so when the user presses on the view button, he is again presented with the appropriate image and title.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/67632151/163389433-7714eca4-5be7-4215-adc6-6b11f2e7ceee.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
