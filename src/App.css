@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,9 +14,21 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.Mimg{
+  margin-top: 20px;
+}
+.Mimg:hover{
+  transform: scale(1.2);
+}
 
 .App-header {
   background-color: #282c34;
+  background-color: white;
+  background-image: url("https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg");
+  background-image: url("https://cdn.wallpapersafari.com/8/63/AH6wFv.png");
+
+  background-image: url("https://www.meme-arsenal.com/memes/f8600ffab3d1ce81925037d25746f32d.jpg");
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +50,157 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/409/192/small/abstract-geometric-banner-free-vector.jpg");
+  background-color: #cccccc;
+ }
+
+  
+table, th, td {
+  border: 1px solid black;
+}
+
+.headerC {
+  width: 100%;
+  font-style: italic;
+  opacity: 90%;
+  height: 100%;
+  font-size: 80pt;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 210px;
+  margin: 0;
+  margin-top: 20px;
+  color: black;
+ }
+
+ .headerC:hover {
+  color: darkred;
+  opacity: 100%;
+  transform: translateY(4px);
+  transform: scale(0.95);
+  font-size: 80pt;
+ 
+}
+
+
+.table-wrapper{
+  opacity: 85%;
+  margin: 300px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+  max-height: 300px;
+  color:black;
+  width: 1000px;
+  overflow-y: scroll;
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  height: 20%;
+  max-width: 100%;
+  
+  white-space: nowrap;
+  background-color: antiquewhite;
+}
+
+
+.fl-table td, .fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+
+.balbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color:darkorange;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px #999;
+  margin: 20px 10px 30px;
+  }
+  .balbutton:hover {background-color: darkcyan}
+  .balbutton:active {
+  background-color: darkorange;
+  box-shadow: 0 5px darkgray;
+  transform: translateY(4px);
+  }
+
+  .ButtonDiv{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+ 
+.tbutton {
+  display: inline-block;
+  padding: 7px 9px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px lightgreen;
+  
+  }
+  .tbutton:hover {background-color: purple}
+  .tbutton:active {
+  background-color:lightgreen;
+  box-shadow: 0 5px orange;
+  transform: translateY(4px);
+  }
+  
+  .loader {
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
